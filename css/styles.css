@@ -42,6 +42,26 @@ body {
 	font-size:2.5em;
 }
 
+#search-input {
+	width:100%;
+	border-radius: 10px;
+}
+
+.col-centered {
+	margin: 0 auto!important;
+	float:none;
+	text-align:center!important;
+}
+
+
+input#search-input {
+	width:100%;
+}
+
+#search-form {
+	margin-bottom:30px;
+}
+
 footer {
 	background:#333;
 	color:white;

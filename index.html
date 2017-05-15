@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Leo Rubiano</title>
+  <title>Wikipedia Viewer</title>
 
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <!-- Bootstrap -->
@@ -66,15 +66,41 @@
               <div class="col-md-3"></div>
               <div class="col-md-6">
                 <div class="text-center">;
-                <h1 class="title padding">
-                  Hello World;
-                </h1>
+                  <h1 class="title padding">
+                    Wikipedia Viewer
+                  </h1>
                 </div>
               </div>
             </div> <!-- End Title Row-->
-          </div>
+          </div><!-- End title Container -->
 
         </section>  <!-- End Section 1 -->
+
+
+        <section id="search">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6 col-centered">
+                <form class="form-inline" id="search-form">
+                  <div class="form-group" >
+                  <label class="sr-only" for="search-input">Search Wikipedia Articles</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="search-input" placeholder="Search for Wikipedia articles">
+                    </div>
+                  </div>
+                  <button type="submit" id="search-btn" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="results">
+          <div class="container well">
+            <div class="row">Testing</div>
+          </div>
+        </section>
 
 
       </div> <!-- End Container No Margin-->
