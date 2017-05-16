@@ -27,6 +27,13 @@ var retrieveSearchResults = function(searchText){
 	$.getJSON(requestURL, function(json){
 		var myStr = JSON.stringify(json);
 		var resultsObj = JSON.parse(myStr);
-		$('#results-div-1').html(myStr);
+		displaySearchResults(resultsObj);
 	});
+}
+
+var displaySearchResults = function(jsonObj){
+	console.log(jsonObj);
+	$('#results-div-1').html(JSON.stringify(jsonObj));
+	console.log(jsonObj);
+	alert(jsonObj.query.search.length);
 }
