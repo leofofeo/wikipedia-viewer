@@ -79,48 +79,62 @@
 
         <section id="search">
           <div class="container">
-            <div class="row">
+            <div class="row"><!--Start of Row-->
               <div class="col-md-3"></div>
               <div class="col-md-6 col-centered">
                 <form class="form-inline" id="search-form">
                   <div class="form-group" >
-                  <label class="sr-only" for="search-input">Search Wikipedia Articles</label>
+                    <label class="sr-only" for="search-input">Search Wikipedia Articles</label>
                     <div class="input-group">
                       <input type="text" class="form-control" id="search-input" placeholder="Search for Wikipedia articles">
                     </div>
                   </div>
                   <button type="submit" id="search-btn" class="btn btn-primary"><i class="fa fa-search"></i></button>
                 </form>
-              </div>
+                <h4>
+                  OR
+                </h4>
+                <a href="https://en.wikipedia.org/wiki/Special:Random">
+                  <button id="random-btn" class="btn btn-default">
+                    Read a random article
+                  </button>  
+                </a>
+              </div>               
+
+            </div> <!-- End of Row-->
+          </div>
+        </div>
+      </section>
+
+      <section id="results">
+        <div class="container well">
+          <div class="row">
+            <div id="results-div-1" class="results-div">
+
             </div>
           </div>
-        </section>
-
-        <section id="results">
-          <div class="container well">
-            <div class="row">Testing</div>
-          </div>
-        </section>
+        </div>
+      </section>
 
 
-      </div> <!-- End Container No Margin-->
+    </div> <!-- End Container No Margin-->
 
 
-      <footer class="text-center">
-        <a href="#">
-          <p>
-            A Leo Fo Feo Production
-          </p> 
-          <i class="fa fa-beer" aria-hidden="true"></i> 
-        </a>
-      </footer>
+    <footer class="text-center">
+      <a href="https://leofofoe.github.io">
+        <p>
+          A Leo Fo Feo Production
+        </p> 
+        <i class="fa fa-beer" aria-hidden="true"></i> 
+      </a>
+    </footer>
 
-      <!--jQuery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-      <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
-      <!-- Bootstrap JS -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </body>
-    </html>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+  </html>

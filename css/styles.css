@@ -42,6 +42,40 @@ body {
 	font-size:2.5em;
 }
 
+/* End Nav Bar */
+
+h1.title {
+	font-size: 3.5em;
+	font-weight:bold;
+	font-family: 'Montserrat', 'Roboto', sans-sarif!important;
+}
+
+h4 {
+	display: inline!important;
+	font-family: 'Robot', sans-sarif!important;
+	font-weight:bold!important;
+	font-size:1.5em!important;
+}
+
+div.well {
+	min-height:200px;
+}
+
+input#search-input {
+	width:100%;
+}
+
+#random-btn {
+	float:right;
+	background-color:#f1c40f;
+	color:#fff;
+	font-weight:bold;
+}
+
+#search-form {
+	margin-bottom:30px;
+}
+
 #search-input {
 	width:100%;
 	border-radius: 10px;
@@ -53,14 +87,17 @@ body {
 	text-align:center!important;
 }
 
-
-input#search-input {
-	width:100%;
+.form-inline {
+	float:left;
 }
 
-#search-form {
-	margin-bottom:30px;
+.results-div {
+	padding: 40px;
+	margin: 0 auto;
 }
+
+
+/* Footer styling */
 
 footer {
 	background:#333;
@@ -90,3 +127,5 @@ footer a:link {
 footer a:hover {
 	color:#fff!important;
 }
+
+/* End footer styling */
