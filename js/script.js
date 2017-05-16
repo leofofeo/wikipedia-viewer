@@ -32,8 +32,15 @@ var retrieveSearchResults = function(searchText){
 }
 
 var displaySearchResults = function(jsonObj){
-	console.log(jsonObj);
-	$('#results-div-1').html(JSON.stringify(jsonObj));
-	console.log(jsonObj);
-	alert(jsonObj.query.search.length);
+	$('#results-row').html('');
+	console.log('jsonObj');
+	resultsLength = jsonObj.query.search.length;
+	$('#top-ten').removeClass('hidden');
+	for(var i = 0; i < resultsLength; i++){
+		var snippet = jsonObj.query.search[i]['snippet'];
+		var title = jsonObj.query.search[i]['title'];
+		var src = 'https://www.wikipedia.org';
+
+		$('#results-row').append('<div class="results-div"><div class="results-title"><h2>' + title + '</h2></div><div class="results-snippet">' + snippet + '</div><div class="results-link"><a href="'+ src + '" target="_blank">Full article</a>');
+	}
 }

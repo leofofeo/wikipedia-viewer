@@ -81,6 +81,12 @@ input#search-input {
 	border-radius: 10px;
 }
 
+#top-ten h2 {
+	font-weight:bold;
+	font-family:'Montserrat', 'Roboto', sans-sarif!important;
+	padding-bottom:30px;
+}
+
 .col-centered {
 	margin: 0 auto!important;
 	float:none;
@@ -92,8 +98,23 @@ input#search-input {
 }
 
 .results-div {
-	padding: 40px;
+	padding: 30px 10%;
 	margin: 0 auto;
+	border-top: 1px black solid;
+}
+
+.results-link a {
+	font-weight:bold;
+}
+
+.results-snippet {
+	font-family: 'Roboto', sans-sarif!important;
+	margin: 20px auto;
+}
+
+.results-title h2{
+	font-weight:bold!important;
+	font-family:'Roboto', sans-sarif!important;
 }
 
 
