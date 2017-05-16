@@ -33,13 +33,14 @@ var retrieveSearchResults = function(searchText){
 
 var displaySearchResults = function(jsonObj){
 	$('#results-row').html('');
-	console.log('jsonObj');
+	console.log(jsonObj);
 	resultsLength = jsonObj.query.search.length;
 	$('#top-ten').removeClass('hidden');
 	for(var i = 0; i < resultsLength; i++){
 		var snippet = jsonObj.query.search[i]['snippet'];
 		var title = jsonObj.query.search[i]['title'];
-		var src = 'https://www.wikipedia.org';
+		var urlTitle = title.replace(' ', '_');
+		var src = 'https://www.wikipedia.org/wiki/' + urlTitle;
 
 		$('#results-row').append('<div class="results-div"><div class="results-title"><h2>' + title + '</h2></div><div class="results-snippet">' + snippet + '</div><div class="results-link"><a href="'+ src + '" target="_blank">Full article</a>');
 	}
