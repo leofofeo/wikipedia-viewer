@@ -1,6 +1,6 @@
 //JS and jQuery for RQ
 $('document').ready(function(){
-	
+	$('#results').hide();
 
 });
 
@@ -35,7 +35,8 @@ var displaySearchResults = function(jsonObj){
 	$('#results-row').html('');
 	console.log(jsonObj);
 	resultsLength = jsonObj.query.search.length;
-	$('#top-ten').removeClass('hidden');
+	$('#results').show();
+	$('#footer').removeClass('push-down');
 	for(var i = 0; i < resultsLength; i++){
 		var snippet = jsonObj.query.search[i]['snippet'];
 		var title = jsonObj.query.search[i]['title'];

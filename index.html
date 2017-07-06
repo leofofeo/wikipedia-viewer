@@ -22,39 +22,39 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-96345849-1', 'auto');
-  ga('send', 'pageview');
+        ga('create', 'UA-96345849-1', 'auto');
+        ga('send', 'pageview');
 
-</script>
-  </head>
-      <body>
-       <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Portfolio</a>
-          </div>
+      </script>
+    </head>
+    <body>
+     <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Portfolio</a>
+        </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="https://leofofeo.github.io#about-me">About</a></li>
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-hashpopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="https://leofofeo.github.io#my-work">Preview</a></li>
-                  <li><a href="https://leofofeo.github.io/portfolio">Full Portfolio</a></li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://leofofeo.github.io#about-me">About</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-hashpopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://leofofeo.github.io#my-work">Preview</a></li>
+                <li><a href="https://leofofeo.github.io/portfolio">Full Portfolio</a></li>
                   <!-- <li><a href="#">
                     Resume
                   </a></li> -->
@@ -69,62 +69,48 @@
 
       <div class="container nomargin"> <!-- Begin Body Container No Margin-->
 
+        <section> <!-- Title Section-->
+          <h1 class="title">Wikipedia Viewer</h1>
+        </section>  <!-- End Title Section -->
 
-        <section> <!-- Section 1-->
-          <div class="container">
-            <div class="row"> <!-- Title Row -->
-              <div class="col-md-3"></div>
-              <div class="col-md-6">
-                <div class="text-center">;
-                  <h1 class="title padding">
-                    Wikipedia Viewer
-                  </h1>
+        <!--Begin Search Section-->
+        <section id="search">
+          <div class="search-child search-child-form"> 
+            <form class="form-inline" id="search-form">
+              <div class="form-group" >
+                <label class="sr-only" for="search-input">Search Wikipedia Articles</label>
+                <div class="input-group" id="input-group">
+                  <input type="text" class="form-control" id="search-input" placeholder="Search for Wikipedia articles">
+                  <button type="submit" id="search-btn" class="btn btn-primary"><i class="fa fa-search"></i></button>
                 </div>
               </div>
-            </div> <!-- End Title Row-->
-          </div><!-- End title Container -->
-
-        </section>  <!-- End Section 1 -->
-
-
-        <section id="search">
-          <div class="container">
-            <div class="row"><!--Start of Row-->
-              <div class="col-md-3"></div>
-              <div class="col-md-6 col-centered">
-                <form class="form-inline" id="search-form">
-                  <div class="form-group" >
-                    <label class="sr-only" for="search-input">Search Wikipedia Articles</label>
-                    <div class="input-group">
-                      <input type="text" class="form-control" id="search-input" placeholder="Search for Wikipedia articles">
-                    </div>
-                  </div>
-                  <button type="submit" id="search-btn" class="btn btn-primary"><i class="fa fa-search"></i></button>
-                </form>
-                <h4>
-                  OR
-                </h4>
-                <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
-                  <button id="random-btn" class="btn btn-default">
-                    Read a random article
-                  </button>  
-                </a>
-              </div>               
-
-            </div> <!-- End of Row-->
+              
+            </form>
           </div>
-        </div>
-      </section>
-
-      <section id="results">
-        <div class="container well">
-          <div class="text-center hidden" id="top-ten">
-            <h2>
-              Top 10 Results:
-            </h2>
+          <div class="search-child search-child-or">
+            <h4>
+              OR
+            </h4>
           </div>
-          <div class="row" id="results-row">
-           <!-- Sample Content for Styling purposes -->
+          <div class="search-child search-child-btn">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+              <button id="random-btn" class="btn btn-default">
+                Read a random article
+              </button>  
+            </a>
+          </div>             
+        </section>
+        <!-- End Search Section-->
+
+        <section id="results">
+          <div class="container well">
+            <div class="text-center" id="top-ten">
+              <h2>
+                Top 10 Results:
+              </h2>
+            </div>
+            <div class="row" id="results-row">
+             <!-- Sample Content for Styling purposes -->
             <!-- <div class="results-div">
               <div class="results-title">
                 <h2>
@@ -139,7 +125,7 @@
               </div>
             </div> -->
 
-           <!-- End Sample Content-->
+            <!-- End Sample Content-->
           </div>
         </div>
       </section>
@@ -148,7 +134,7 @@
     </div> <!-- End Container No Margin-->
 
 
-    <footer class="text-center">
+    <footer class="text-center push-down" id="footer">
       <a href="https://leofofeo.github.io">
         <p>
           A Leo Fo Feo Production

@@ -20,34 +20,14 @@ body {
 	margin: 50px 0;
 }
 
-/* Navigation Styling */
 
-.navbar {
-	/*background: #34495e!important;*/
-	padding:20px;
-}
-
-
-.navbar-inverse .navbar-nav>li>a {
-	color:#ecf0f1!important;
-	font-size:1.5em;
-}
-
-.navbar .navbar-brand:hover {
-	color:#2980b9!important;
-}
-
-.navbar .navbar-brand {
-	color: #ecf0f1!important;
-	font-size:2.5em;
-}
-
-/* End Nav Bar */
 
 h1.title {
 	font-size: 3.5em;
 	font-weight:bold;
 	font-family: 'Montserrat', 'Roboto', sans-sarif!important;
+	text-align: center;
+	padding-bottom:20px;
 }
 
 h4 {
@@ -57,12 +37,16 @@ h4 {
 	font-size:1.5em!important;
 }
 
-div.well {
-	min-height:200px;
+#input-group {
+	display:flex;
+	flex-flow: row nowrap;
 }
 
-input#search-input {
-	width:100%;
+#main {
+	display:flex;
+	flex-flow: column;
+	min-height: 100vh!important;
+	align-content: space-between;
 }
 
 #random-btn {
@@ -72,14 +56,15 @@ input#search-input {
 	font-weight:bold;
 }
 
-#search-form {
-	margin-bottom:30px;
+#search {
+	display:flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: flex-start;
+	margin:20px auto;
+	padding: 0 20%;
 }
 
-#search-input {
-	width:100%;
-	border-radius: 10px;
-}
 
 #top-ten h2 {
 	font-weight:bold;
@@ -117,8 +102,50 @@ input#search-input {
 	font-family:'Roboto', sans-sarif!important;
 }
 
+.search-child {
+	padding: 0 10px;
+	/*background-color:gainsboro;
+	border: 1px solid black;*/
 
-/* Footer styling */
+}
+
+.search-child-btn {
+	flex: 1 10 40% !important;
+}
+
+.search-child-form {
+	flex: 1 1 40% !important;
+	display:flex;
+}
+
+.search-child-or {
+	flex: 1 10 20% !important;
+	text-align: center;
+}
+
+/* Navigation + Footer Styling */
+
+.navbar {
+	/*background: #34495e!important;*/
+	padding:20px;
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+	color:#ecf0f1!important;
+	font-size:1.5em;
+}
+
+.navbar .navbar-brand:hover {
+	color:#2980b9!important;
+}
+
+.navbar .navbar-brand {
+	color: #ecf0f1!important;
+	font-size:2.5em;
+}
+
+/* End Nav Bar */
 
 footer {
 	background:#333;
@@ -149,4 +176,25 @@ footer a:hover {
 	color:#fff!important;
 }
 
+footer.push-down {
+	margin-top: 300px;
+}
+
 /* End footer styling */
+
+
+	@media (max-width:768px){
+	#search {
+	display:flex;
+	flex-flow: column!important;
+	justify-content: space-between;
+	align-items: center;
+	margin:20px auto;
+	padding: 0 10%;	
+	}
+
+	.search-child-or {
+		margin-bottom:10px;
+	}
+	
+}
