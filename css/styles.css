@@ -19,6 +19,7 @@
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 .flex-box-header {
@@ -34,6 +35,10 @@ h1 {
 /*********************/
 /*** SEARCH SECTION  ***/
 /*********************/
+
+.section-search {
+	padding-bottom: 20px;
+}
 
 .form-input {
 	width:200px;
@@ -52,20 +57,24 @@ h1 {
 }
 
 .random-btn {
-	margin-left:20px;
+	margin:0 auto;
+	/*margin-left:20px;*/
 	background-color:#f1c40f;
 	color:#fff;
 	
 }
 
+.elem-space form, .elem-space a { 
+	margin:10px;
 
+ }
 /*********************/
 /***  RESULTS DISPLAY SECTION  ***/
 /*********************/
 
 .section-results {
 	background-color: #f2f2f2;	
-	margin-top:50px;
+	margin-top:20px;
 }
 
 .results-div {
