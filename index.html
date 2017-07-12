@@ -7,10 +7,10 @@
 
   <title>Wikipedia Viewer</title>
 
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <!-- Bootstrap -->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/simple-grid.css">
+
 
   <!-- Font Awesome -->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,122 +33,75 @@
 
       </script>
     </head>
+
+
     <body>
-     <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Portfolio</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://leofofeo.github.io#about-me">About</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-hashpopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://leofofeo.github.io#my-work">Preview</a></li>
-                <li><a href="https://leofofeo.github.io/portfolio">Full Portfolio</a></li>
-                  <!-- <li><a href="#">
-                    Resume
-                  </a></li> -->
-                </ul>
-              </li>
-              <li><a href="https://leofofeo.github.io#contact">Contact</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-
-
-      <div class="container nomargin"> <!-- Begin Body Container No Margin-->
-
-        <section> <!-- Title Section-->
-          <h1 class="title">Wikipedia Viewer</h1>
-        </section>  <!-- End Title Section -->
-
-        <!--Begin Search Section-->
-        <section id="search">
-          <div class="search-child search-child-form"> 
-            <form class="form-inline" id="search-form">
-              <div class="form-group" >
-                <label class="sr-only" for="search-input">Search Wikipedia Articles</label>
-                <div class="input-group" id="input-group">
-                  <input type="text" class="form-control" id="search-input" placeholder="Search for Wikipedia articles">
-                  <button type="submit" id="search-btn" class="btn btn-primary"><i class="fa fa-search"></i></button>
-                </div>
-              </div>
-              
-            </form>
-          </div>
-          <div class="search-child search-child-or">
-            <h4>
-              OR
-            </h4>
-          </div>
-          <div class="search-child search-child-btn">
-            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
-              <button id="random-btn" class="btn btn-default">
-                Read a random article
-              </button>  
-            </a>
-          </div>             
-        </section>
-        <!-- End Search Section-->
-
-        <section id="results">
-          <div class="container well">
-            <div class="text-center" id="top-ten">
-              <h2>
-                Top 10 Results:
-              </h2>
-            </div>
-            <div class="row" id="results-row">
-             <!-- Sample Content for Styling purposes -->
-            <!-- <div class="results-div">
-              <div class="results-title">
-                <h2>
-                  This is the title of the article
-                </h2>
-              </div>
-              <div class="results-snippet">
-                Here's some sample text. Please ignore until further notice, as there's nothing of relevance here. Most wikipedia search results snippets probably won't even be this long
-              </div>
-              <div class="results-link">
-                <a href="https://www.wikipedia.org">Full Article</a>
-              </div>
-            </div> -->
-
-            <!-- End Sample Content-->
+      <section class="section-header ">
+        <div class="row flex-box-header">
+          <div class="col-12">
+            <h1 class="center">Wikipedia Viewer</h1>
           </div>
         </div>
       </section>
 
+      <section class="section-search">
+        <div class="row">
+          <div class="col-12 center flex-box-row">
+            <form action="" id="j-search-form">
+              <input type="text" id="j-search-input" name="form-input" placeholder="Search for Wikipedia Articles" class="form-input">
+              <!-- <button type="submit" class="btn form-btn"><i class="fa fa-search"></i></button> -->
+            </form>
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="random-link">
+              <button class="btn random-btn">
+                Read a random article
+              </button>  
+            </a>
+          </div>
+        </div>
+      </section>
 
-    </div> <!-- End Container No Margin-->
+      
+
+      <section id="j-results" class="container section-results">
+        <div class="row">
+          <div class="col-12" id="j-results-row">
+            <div class="center">
+              <h2 >
+                Top 10 Results
+              </h2>
+            </div>
+            <div class="results-div">
+              <h3>
+                This is the title of the article
+              </h3>
+              <div class="results-snippet">
+               Here's some sample text. Please ignore until further notice, as there's nothing of relevance here. Most wikipedia search results snippets probably won't even be this long
+             </div>
+             <div class="results-link">
+               <a href="https://www.wikipedia.org">Full Article</a>
+             </div>
+             <hr class="sep">
+           </div>
+
+         </div> 
+       </div>          
+     </section>
 
 
-    <footer class="text-center push-down" id="footer">
-      <a href="https://leofofeo.github.io">
-        <p>
-          A Leo Fo Feo Production
-        </p> 
-        <i class="fa fa-beer" aria-hidden="true"></i> 
-      </a>
+
+
+     <footer class="section-footer center">
+      <div>
+        <a href="https://leofofeo.github.io">      
+          A Leo Fo Feo Production 
+          <i class="fa fa-beer" aria-hidden="true"></i> 
+        </a>  
+      </div>      
     </footer>
 
     <!--jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
     <script type="text/javascript" src="js/script.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
   </html>

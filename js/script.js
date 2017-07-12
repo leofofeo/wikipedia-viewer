@@ -1,13 +1,13 @@
 //JS and jQuery for RQ
 $('document').ready(function(){
-	$('#results').hide();
+	$('#j-results').hide();
 
 });
 
 
-$('#search-form').submit(function(e){
+$('#j-search-form').submit(function(e){
 	e.preventDefault();
-	var searchText = $('#search-input').val();
+	var searchText = $('#j-search-input').val();
 	// alert(searchText);
 	retrieveSearchResults(searchText);
 });
@@ -32,17 +32,15 @@ var retrieveSearchResults = function(searchText){
 }
 
 var displaySearchResults = function(jsonObj){
-	$('#results-row').html('');
-	console.log(jsonObj);
+	$('#j-results-row').html('');
 	resultsLength = jsonObj.query.search.length;
-	$('#results').show();
-	$('#footer').removeClass('push-down');
+	$('#j-results').show();
 	for(var i = 0; i < resultsLength; i++){
 		var snippet = jsonObj.query.search[i]['snippet'];
 		var title = jsonObj.query.search[i]['title'];
 		var urlTitle = title.replace(' ', '_');
 		var src = 'https://www.wikipedia.org/wiki/' + urlTitle;
 
-		$('#results-row').append('<div class="results-div"><div class="results-title"><h2>' + title + '</h2></div><div class="results-snippet">' + snippet + '</div><div class="results-link"><a href="'+ src + '" target="_blank">Full article</a>');
+		$('#j-results-row').append('<div class="results-div"><h3>' + title + '</h3><div class="results-snippet">' + snippet + '</div><div class="results-link"><a href="'+ src + '" target="_blank">Full article</a></div></div><hr class="sep">');
 	}
 }
